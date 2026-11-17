@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Base settings for every repo",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigestsToSemver",
+    "security:openssf-scorecard",
+    ":configMigration",
+    ":disableRateLimiting",
+    ":maintainLockFilesWeekly",
+    ":semanticCommits",
+    ":timezone(America/Detroit)"
+  ],
+  "dependencyDashboard": {
+    "title": "Renovate Dashboard 🤖"
+  },
+  "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
+  "ignorePaths": ["**/*.sops.*", "**/*.md"]
+}
