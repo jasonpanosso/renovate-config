@@ -16,8 +16,8 @@ permissions:
   contents: read
 
 env:
-  # renovate: datasource=npm depName=renovate
-  RENOVATE_VERSION: 44.239.1
+  # renovate: datasource=github-releases depName=renovatebot/renovate
+  PINNED_RENOVATE_VERSION: 44.239.1
 
 jobs:
   validate:
@@ -35,4 +35,4 @@ jobs:
           node-version: 24
 
       - name: Validate
-        run: npx --yes --package "renovate@${RENOVATE_VERSION}" -- renovate-config-validator --strict --no-global *.json
+        run: npx --yes --package "renovate@${PINNED_RENOVATE_VERSION}" -- renovate-config-validator --strict --no-global .renovaterc.json *.json

@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Workflow actions and the pinned Renovate version; the presets in this repo apply to it like any other",
+  "extends": ["github>jasonpanosso/renovate-config"]
+}
