@@ -4,7 +4,6 @@
   "extends": [
     "config:recommended",
     "helpers:pinGitHubActionDigestsToSemver",
-    "security:openssf-scorecard",
     ":configMigration",
     ":disableRateLimiting",
     ":maintainLockFilesWeekly",
