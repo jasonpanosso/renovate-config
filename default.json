@@ -9,7 +9,12 @@
     ":disableRateLimiting",
     ":maintainLockFilesWeekly",
     ":semanticCommits",
-    ":timezone(America/Detroit)"
+    ":timezone(America/Detroit)",
+    "github>jasonpanosso/renovate-config:annotations",
+    "github>jasonpanosso/renovate-config:autoMerge",
+    "github>jasonpanosso/renovate-config:labels",
+    "github>jasonpanosso/renovate-config:nix",
+    "github>jasonpanosso/renovate-config:semanticCommits"
   ],
   "dependencyDashboard": {
     "title": "Renovate Dashboard 🤖"

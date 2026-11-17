@@ -2,13 +2,18 @@
 
 Shared Renovate presets for other repos
 
-| Preset                                | Contents                                                                |
-| ------------------------------------- | ----------------------------------------------------------------------- |
-| `github>jasonpanosso/renovate-config` | Base settings (`default.json`)                                          |
-| `:annotations`                        | `# renovate: datasource=… depName=…` comments in yaml, sh and env files |
-| `:autoMerge`                          | Actions and the pinned Renovate CLI automerge after 3 days              |
-| `:labels`                             | `type/*` and `renovate/*` PR labels                                     |
-| `:nix`                                | Enable nix manager                                                      |
-| `:semanticCommits`                    | Commit type by update type, scope and topic by datasource               |
+```json
+"extends": ["github>jasonpanosso/renovate-config"]
+```
 
-List these before the repo's own presets in `extends` (later rules win)
+`default.json` holds the base settings and extends all of these presets:
+
+| Preset             | Contents                                                                |
+| ------------------ | ----------------------------------------------------------------------- |
+| `:annotations`     | `# renovate: datasource=… depName=…` comments in yaml, sh and env files |
+| `:autoMerge`       | Actions and the pinned Renovate CLI automerge after 3 days              |
+| `:labels`          | `type/*` and `renovate/*` PR labels                                     |
+| `:nix`             | Enable nix manager                                                      |
+| `:semanticCommits` | Commit type by update type, scope and topic by datasource               |
+
+List it before the repo's own presets in `extends` (later rules win)
