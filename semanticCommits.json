@@ -2,9 +2,11 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
+      "description": "Set action as lowercase",
       "matchUpdateTypes": ["major"],
       "semanticCommitType": "feat",
       "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:",
+      "commitMessageAction": "update",
       "commitMessageExtra": "( {{currentVersion}} → {{newVersion}} )"
     },
     {
@@ -16,7 +18,8 @@
       "description": "0.x minors should be considered as breaking changes",
       "matchUpdateTypes": ["minor"],
       "matchCurrentVersion": "/^v?0\\./",
-      "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:"
+      "commitMessagePrefix": "{{semanticCommitType}}({{semanticCommitScope}})!:",
+      "commitMessageAction": "update"
     },
     {
       "matchUpdateTypes": ["patch"],
