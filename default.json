@@ -13,7 +13,8 @@
     "github>jasonpanosso/renovate-config:autoMerge",
     "github>jasonpanosso/renovate-config:labels",
     "github>jasonpanosso/renovate-config:nix",
-    "github>jasonpanosso/renovate-config:semanticCommits"
+    "github>jasonpanosso/renovate-config:semanticCommits",
+    "github>jasonpanosso/renovate-config:groups"
   ],
   "dependencyDashboard": {
     "title": "Renovate Dashboard 🤖"

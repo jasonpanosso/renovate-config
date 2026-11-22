@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "zizmor Group: zizmor-action and the zizmor version its version input pins",
+      "groupName": "zizmor",
+      "matchPackageNames": ["zizmorcore/zizmor-action", "zizmor"],
+      "separateMajorMinor": false,
+      "semanticCommitType": "ci",
+      "semanticCommitScope": "github-action",
+      "group": {
+        "commitMessageTopic": "{{{groupName}}} group"
+      }
+    }
+  ]
+}
